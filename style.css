@@ -13,12 +13,14 @@
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
 }
-main{
+
+main {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-image: url(./images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
     background-position-x: -18rem, 52rem;
@@ -36,18 +38,21 @@ main{
     flex-direction: column;
     border-radius: 1rem;
 }
-.bigimg{
+
+.bigimg {
     border-radius: 1rem 1rem 0 0;
 }
-.art1{
+
+.art1 {
     height: 40%;
     width: 100%;
     position: relative;
     border-bottom: .1px solid var(--Dark-grayish-blue);
     background-color: white;
-    
+
 }
-.art1 img{
+
+.art1 img {
     width: 5rem;
     border: 4px solid white;
     border-radius: 50%;
@@ -56,28 +61,33 @@ main{
     left: 50%;
     transform: translateX(-50%);
 }
-.art1 div{
+
+.art1 div {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
 }
-.namediv h4{
+
+.namediv h4 {
     margin: 7px 0;
     color: var(--Very-dark-desaturated-blue);
 }
-.namediv span{
+
+.namediv span {
     margin: 0 6px;
     font-weight: 400;
     color: var(--Dark-gray);
 }
-.namediv p{
+
+.namediv p {
     font-size: 14px;
     color: var(--Dark-gray);
     font-weight: 400;
 }
-.art2{
+
+.art2 {
     height: 20%;
     width: 100%;
     /* background-color: royalblue; */
@@ -87,16 +97,28 @@ main{
     border-radius: 0 0 1rem 1rem;
     background-color: white;
 }
-.art2 h3{
+
+.art2 h3 {
     color: var(--Very-dark-desaturated-blue);
 }
-.art2 p{
+
+.art2 p {
     font-size: 12px;
     color: var(--Dark-grayish-blue);
 }
-.stats{
+
+.stats {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
